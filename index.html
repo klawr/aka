@@ -10,7 +10,10 @@
 
 <body>
     <div id='links'>
-        <a id='#1' href='https://github.com/klawr/deepmech'>Project Page</a>
+        <p>To be redirected via URL hash activate JavaScript</p>
+        <ol>
+            <li><a id='#1' href='https://github.com/klawr/deepmech'>Project Page</a></li>
+        </ol>
     </div>
 
     <script>
@@ -21,7 +24,7 @@
             const a = document.getElementById(hash);
             text.innerHTML = `You are being redirected to: ${a.href}`;
             document.body.appendChild(text);
-            setTimeout(() => { a.click(); }, 3000);
+            setTimeout(() => { a.click(); }, 1000);
         }
     </script>
 </body>
