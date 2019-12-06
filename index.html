@@ -10,18 +10,77 @@
 
 <body>
     <div id='links'>
+        <h3><a id='project_page' href='https://github.com/klawr/deepmech'>Project Page</a></h3>
         <p>To be redirected via URL hash activate JavaScript</p>
         <ol>
-            <li><a id='#1' href='https://github.com/klawr/deepmech'>Project Page</a></li>
+            <li>
+                <a id='#1' href='https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research'>
+                    List of datasets for machine learning research
+                </a>
+            </li>
+            <li>
+                <a id='#2' href='https://klawr.github.io/deepmech/reports/srp/demos/c\_to\_f.js'>
+                    c_to_f.js
+                </a>
+            </li>
+            <li>
+                <a id='#3' href='https://klawr.github.io/deepmech/reports/srp/demos/c_to_f_adv.js'>
+                    c_to_f_adv.js adds a (useless) value to the c_to_f structure
+                </a>
+            </li>
+            <li>
+                <a id='#4' href='https://klawr.github.io/deepmech/src/data/data_generation.py'>
+                    Code for data generation
+                </a>
+            </li>
+            <li>
+                <a id='#5' href='https://github.com/klawr/deepmech/blob/master/notebooks/1.0-kl-first_model.ipynb'>
+                    Jupyter Notebook: first model
+                </a>
+            </li>
+            <li>
+                <a id='#6' href='https://github.com/klawr/deepmech/tree/master/notebooks'></a>
+                    All Jupyter Notebooks
+            </li>
+            <li>
+                <!-- TODO -->
+                <a id='#7' href=''>
+                    Jupyter Notebook after data augmentation
+                </a>
+            </li>
+            <li>
+                <!-- TODO -->
+                <a id='#8' href=''>
+                    Jupyter Notebook after feature reduction
+                </a>
+            </li>
+            <li>
+                <!-- TODO -->
+                <a id='#9' href=''>
+                    Jupyter Notebook: first convolutional model
+                </a>
+            </li>
+            <li>
+                <!-- TODO -->
+                <a id='#10' href=''>
+                    Code to preprocess data -> Maybe send to another selection page...
+                </a>
+            </li>
         </ol>
     </div>
 
     <script>
         const hash = window.location.hash;
+        let a;
         if (hash) {
+            a = document.getElementById(hash);
+        }
+        if (!a) {
+            a = document.getElementById('project_page')
+        }
+        if (a) {
             document.getElementById('links').style.display = 'none';
-            const text = document.createElement('h1');
-            const a = document.getElementById(hash);
+            const text = document.createElement('h3');
             text.innerHTML = `You are being redirected to: ${a.href}`;
             document.body.appendChild(text);
             setTimeout(() => { a.click(); }, 1000);
