@@ -16,7 +16,7 @@ Create **index.html** automatically from an **.aka** file.
 
 \newcommand{\listlinkname}{Link Index}
 \newlistof{links}{aka}{\listlinkname}
-\newcommand{\theaka}{\url{https://aka.klawr.de/srp\#\thelinks}}
+\newcommand{\theaka}{\url{https://aka.klawr.de/X\#\thelinks}}
 \newcommand{\aka}[1]{\refstepcounter{links}\theaka%
 \addcontentsline{aka}{links}{\url{\#\thelinks}: \tiny{\url{#1}}}}
 ```
