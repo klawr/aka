@@ -18,8 +18,7 @@ Create index.html automatically for using a .aka file.
 \cftpagenumbersoff{links}
 \newcommand{\theaka}{\url{https://aka.klawr.de/project\#\thelinks}}
 \newcommand{\aka}[1]{\refstepcounter{links}\theaka%
-\addcontentsline{aka}{links}{%
-\theaka\dotfill\hbox{}\newline%
+\addcontentsline{aka}{links}{\theaka\dotfill\hbox{}\newline%
 \makebox[\textwidth][s]{\dotfill\url{#1}}}}
 ```
 
