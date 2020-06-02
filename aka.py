@@ -86,10 +86,11 @@ def is_aka(string_list):
     return all(lst)
 
 with open(aka_path) as aka_file:
-    ids = re.findall(r'{\\url\s*{\\(#\d+)}:', aka_file.read())
-    url = re.findall(r'{\\url\s*{(https:\/\/\S[^}]+)}', aka_file.read())
+    aka = aka_file.read()
+    ids = re.findall(r'{\\url\s*{\\(#\d+)}:', aka)
+    url = re.findall(r'{\\url\s*{(https:\/\/\S[^}]+)}', aka)
 
-    if (len(ids) not == len(url):
+    if (len(ids) != len(url)):
         print('aka identifier not valid in all urls')
         exit()
 
