@@ -1,4 +1,4 @@
-# aka.klawr.de
+# [aka.klawr.de](https://github.com/klawr/aka)
 
 This repository is used to have prettier links in reports and other documents.  
 Each project gets one **index.html** which is put into a respective directory.
