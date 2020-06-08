@@ -8,6 +8,10 @@ E.g. the directory `srp` handles links from the Student Research Project and man
 https://aka.klawr.de/srp#1 which redirects to  
 https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research.
 
+In documents that cannot redirect, such as those on dead trees, this is more usable.
+
+---
+
 Create **index.html** automatically from an **.aka** file.
 **.aka** files are created by LaTeX documents using the following snippet:
 
@@ -15,7 +19,7 @@ Create **index.html** automatically from an **.aka** file.
 \usepackage{tocloft}
 
 \newcommand{\akaAbb}{X} % Replace X with project abbreviation
-\newcommand{\listlinkname}{Link Index - \url{https://aka.klawr.de/\akaAbb}}
+\newcommand{\listlinkname}{Link Index - \url{https://aka.klawr.de/\akaAbb}} // Replace aka.klawr.de because this domain is MINE! 😁
 \newlistof{links}{aka}{\listlinkname}
 \newcommand{\theaka}{\url{https://aka.klawr.de/\akaAbb\#\thelinks}}
 \newcommand{\aka}[1]{\refstepcounter{links}\theaka%
@@ -36,8 +40,7 @@ in the document.
 
 The **index.html** in the respective project directory has to be updated of course.
 
-Updates are done by feeding the generated **document.aka** into the provided **aka.py**.  
-TODO: Add a script using node.js.
+Updates are done by feeding the generated **document.aka** into the provided **aka.py**.
 
 The input is assumed to be a list of pairs of aka ids and the target links.
 All links have to be marked by the \url styling of LaTeX.
@@ -46,3 +49,5 @@ handed over this way. (Should be done automatically by the LaTeX snippet).
 
 At the moment I see no way to create more than one index.html, so each
 project has to have its own directory...
+
+- [ ] Add a js script using node.js.
