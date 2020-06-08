@@ -19,7 +19,8 @@ Create **index.html** automatically from an **.aka** file.
 \usepackage{tocloft}
 
 \newcommand{\akaAbb}{X} % Replace X with project abbreviation
-\newcommand{\listlinkname}{Link Index - \url{https://aka.klawr.de/\akaAbb}} // Replace aka.klawr.de because this domain is MINE! 😁
+% Replace aka.klawr.de because this domain is MINE! 😁
+\newcommand{\listlinkname}{Link Index - \url{https://aka.klawr.de/\akaAbb}} 
 \newlistof{links}{aka}{\listlinkname}
 \newcommand{\theaka}{\url{https://aka.klawr.de/\akaAbb\#\thelinks}}
 \newcommand{\aka}[1]{\refstepcounter{links}\theaka%
