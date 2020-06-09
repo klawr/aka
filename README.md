@@ -1,14 +1,13 @@
 # [aka.klawr.de](https://github.com/klawr/aka)
 
 This repository is used to have prettier links in reports and other documents.  
-Each project gets one **index.html** which is put into a respective directory.
-
-E.g. the directory `srp` handles links from the Student Research Project and manages links such as:
+Each project gets one **index.html** which is put into a respective directory,
+e.g. the directory `srp` handles links from the Student Research Project and manages links such as:
 
 https://aka.klawr.de/srp#1 which redirects to  
 https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research.
 
-In documents that cannot redirect, such as those on dead trees, this is more usable.
+In documents that cannot redirect, such as those on dead trees, this is method is much more suitable.
 
 ---
 
