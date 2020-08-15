@@ -49,6 +49,3 @@ handed over this way. (Should be done automatically by the LaTeX snippet).
 
 At the moment I see no way to create more than one index.html, so each
 project has to have its own directory...
-
-- [x] Add python script.
-- [ ] Add js script using node.js.
