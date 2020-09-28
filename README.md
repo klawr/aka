@@ -7,7 +7,8 @@ e.g. the directory `srp` handles links from the Student Research Project and man
 https://aka.klawr.de/srp#1 which redirects to  
 https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research.
 
-In documents that cannot redirect, such as those on dead trees, this is method is much more suitable.
+Active projects include:
+ - [Student research project](https://aka.klawr.de/srp)
 
 ---
 
