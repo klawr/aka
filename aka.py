@@ -34,12 +34,12 @@ first_half = """
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>srp links</title>
+    <title>Redirection page</title>
 </head>
 
 <body>
     <div id='links'>
-        <h3><a id='project_page' href='https://github.com/klawr/deepmech/tree/master/reports/srp'>Project Page</a></h3>
+        <h3>Redirection page</h3>
         <p>To be redirected via URL hash activate JavaScript</p>
         <ol>"""
 	
