@@ -45,8 +45,8 @@ Updates are done by feeding the generated **document.aka** into the provided **a
 
 The input is assumed to be a list of pairs of aka ids and the target links.
 All links have to be marked by the \url styling of LaTeX.
-The aka links are identified by r'{\\url\s*{\\(#\d+)}:', so they have to be
-handed over this way. (Should be done automatically by the LaTeX snippet).
+The aka links are identified by `r'{\\url\s*{\\(#\d+)}:'`.
+(Should be cool automatically through the LaTeX snippet).
 
 At the moment I see no way to create more than one index.html, so each
-project has to have its own directory...
+project has to have its own directory.
