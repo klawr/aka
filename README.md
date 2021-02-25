@@ -45,6 +45,7 @@ Updates are done by feeding the generated **document.aka** into the provided **a
 
 The input is assumed to be a list of pairs of aka ids and the target links.
 All links have to be marked by the \url styling of LaTeX.
+
 The aka links are identified by `r'{\\url\s*{\\(#\d+)}:'`.
 (Should be cool automatically through the LaTeX snippet).
 
