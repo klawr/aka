@@ -9,6 +9,7 @@ https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research.
 
 Active projects include:
  - [Student research project](https://aka.klawr.de/srp)
+ - [Student engineering project](https://aka.klawr.de/sep)
 
 ---
 
